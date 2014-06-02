@@ -1,0 +1,15 @@
+This is a preliminary port of XScheme 2.0 to OS/2.
+
+Note: I did not do this port, nor do I have the information on the
+author who did.  I just tweaked the source a bit so that it would
+compile under IBM's C Set/2.  It was originally ported to MS's
+cl386.exe.
+
+If you have any questions or suggestions (please, suggestions) send them
+to me at rafetmad@oxy.edu.
+
+-Dave Giller
+
+PS: This is a preliminary version.  Later versions will hopefully compile
+under gcc 2.1.
+

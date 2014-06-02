@@ -1,0 +1,99 @@
+; зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+; Ё Module Type -- One of:                                            Ё
+; Ё  NAME <appname> WINDOWAPI|WINDOWCOMPAT|NOTWINDOWCOMPAT            Ё
+; Ё  LIBRARY <libname> INITGLOBA|INITINSTANCE                         Ё
+; Ё  VIRTUAL DEVICE <vddname>                                         Ё
+; Ё  PHYSICAL DEVICE <pddname>                                        Ё
+; юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+NAME XSCHEME WINDOWCOMPAT
+
+; зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+; Ё Description:                                                      Ё
+; Ё  DESCRIPTION 'Module Description'                                 Ё
+; юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+DESCRIPTION 'XScheme 2.0b2'
+
+; зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+; Ё Base Address:                                                     Ё
+; Ё  BASE=<preferred base address>                                    Ё
+; юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+;BASE=
+
+; зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+; Ё Default Code and Data Segment Attributes: (defaults listed second)Ё
+; Ё  CODE <OPTIONS>                                                   Ё
+; Ё      <options>=  PRELOAD|LOADONCALL                               Ё
+; Ё                  EXECUTEONLY|EXECUTEREAD                          Ё
+; Ё                  IOPL|NOIOPL                                      Ё
+; Ё                  CONFORMING|NONCONFORMING                         Ё
+; Ё  DATA <options>                                                   Ё
+; Ё      <options>=  PRELOAD|LOADONCALL                               Ё
+; Ё                  READONLY|READWRITE                               Ё
+; Ё                  NONE|SINGLE|MULTIPLE                             Ё
+; Ё                                                                   Ё
+; юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+CODE PRELOAD
+DATA PRELOAD
+
+; зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+; Ё Specific Segment Attributes: (defaults listed second)             Ё
+; Ё   'segname' CLASS 'classname' <options>                           Ё
+; Ё      <options>=  PRELOAD|LOADONCALL                               Ё
+; Ё                  READONLY|READWRITE                               Ё
+; Ё                  EXECUTEONLY|EXECUTEREAD                          Ё
+; Ё                  IOPL|NOIOPL                                      Ё
+; Ё                  CONFORMING|NONCONFORMING                         Ё
+; Ё                  ALIAS                                            Ё
+; юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+;SEGMENTS
+
+; зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+; Ё Stack allocation size                                             Ё
+; Ё   STACKSIZE 4096                                                  Ё
+; юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+STACKSIZE 8192
+
+; зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+; Ё Functions to Export                                               Ё
+; Ё   FuncName[=InternalFuncName] [@ord[RESIDENTNAME]] [paramwords]   Ё
+; юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+;EXPORTS
+
+; зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+; Ё Functions to Import                                               Ё
+; Ё   [internalname=]modulename.entry                                 Ё
+; юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+;IMPORTS
+
+; зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+; Ё DOS Stub                                                          Ё
+; Ё   STUB=DOSSTUB.EXE                                                Ё
+; юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+;STUB=
+
+; зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+; Ё Local Heap Size                                                   Ё
+; Ё   HEAPSIZE=16000                                                  Ё
+; юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+;HEAPSIZE=
+
+; зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+; Ё Protected Mode Operation                                          Ё
+; Ё   PROTMODE                                                        Ё
+; юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+PROTMODE
+
+; зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+; Ё Preserve existing ordinal information                             Ё
+; Ё   OLD 'filename'                                                  Ё
+; юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+;OLD ''
+
+; зддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддд©
+; Ё Executable Type                                                   Ё
+; Ё   EXETYPE <type>                                                  Ё
+; Ё      <type>= OS2|WINDOWS|UNKNOWN                                  Ё
+; юддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддддды
+EXETYPE OS2
+
+

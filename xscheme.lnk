@@ -1,0 +1,8 @@
+xscheme xscom xsdmem xsftab xsinit xsint +
+xsio xsobj xsprint xsread xssym xsfun1 +
+xsfun2 xsmath xsimage os
+
+
+dde4sbm
+xscheme.def
+
